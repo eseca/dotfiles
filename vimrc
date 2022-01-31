@@ -19,16 +19,19 @@ Plug 'mileszs/ack.vim'
 Plug 'scrooloose/syntastic'
 Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 Plug 'kovetskiy/sxhkd-vim'
 Plug 'chrisbra/csv.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'thaerkh/vim-workspace'
-Plug 'fountain.vim'
 Plug 'junegunn/vim-emoji'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-dispatch'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
+Plug 'eliba2/vim-node-inspect'
+Plug 'guns/vim-clojure-static'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
@@ -61,7 +64,7 @@ nnoremap <C-H> <C-W><C-H>
 imap <Tab> <C-P>
 
 "" ctrlp
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv\|dist'
 
 "" vim-airline statusline appear all the time
 set laststatus=2
@@ -88,9 +91,6 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
-"" 80 column
-let &colorcolumn="81"
-
 " Two spaces indentation
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype eruby setlocal ts=2 sts=2 sw=2
@@ -99,4 +99,5 @@ autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype css setlocal ts=2 sts=2 sw=2
 autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+autocmd Filetype typescript setlocal ts=2 sts=2 sw=2
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
