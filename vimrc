@@ -32,6 +32,8 @@ Plug 'tpope/vim-rails'
 Plug 'eliba2/vim-node-inspect'
 Plug 'guns/vim-clojure-static'
 Plug 'chriskempson/base16-vim'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
