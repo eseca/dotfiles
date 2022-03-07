@@ -47,7 +47,8 @@ syntax enable
 
 "" Theme
 set background=dark
-colorscheme solarized
+let base16colorspace=256
+colorscheme base16-tomorrow
 
 "" Four spaces instead of tab.
 set tabstop=4
