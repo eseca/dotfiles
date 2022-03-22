@@ -34,6 +34,7 @@ Plug 'guns/vim-clojure-static'
 Plug 'chriskempson/base16-vim'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
