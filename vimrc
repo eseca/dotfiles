@@ -14,10 +14,10 @@ Plug 'airblade/vim-rooter'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'godlygeek/tabular'
 Plug 'mileszs/ack.vim'
 Plug 'scrooloose/syntastic'
-Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'kovetskiy/sxhkd-vim'
@@ -31,10 +31,14 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'eliba2/vim-node-inspect'
 Plug 'guns/vim-clojure-static'
-Plug 'chriskempson/base16-vim'
+Plug 'morhetz/gruvbox'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'preservim/nerdtree'
+Plug 'ruanyl/vim-gh-line'
+Plug 'elzr/vim-json'
+Plug 'zhamlin/tiler.vim'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
@@ -48,8 +52,7 @@ syntax enable
 
 "" Theme
 set background=dark
-let base16colorspace=256
-colorscheme base16-tomorrow
+colorscheme nord
 
 "" Four spaces instead of tab.
 set tabstop=4
@@ -74,6 +77,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv\|dist'
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='solarized'
 
 "" syntastic begginer config
 set statusline+=%#warningmsg#
@@ -94,6 +98,9 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+"" NerdTree
+nnoremap <leader><C-_> :NERDTreeFocus<CR>
 
 " Two spaces indentation
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
