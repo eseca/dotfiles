@@ -1,0 +1,8 @@
+xbanish &
+
+xfsettingsd &
+nm-applet &
+pa-applet &
+pamac-tray &
+blueman-applet &
+msm_notifier &
