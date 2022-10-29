@@ -100,7 +100,7 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 "" NerdTree
-nnoremap <leader><C-_> :NERDTreeFocus<CR>
+nnoremap <Leader><C-_> :NERDTreeFocus<CR>
 
 " Two spaces indentation
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
