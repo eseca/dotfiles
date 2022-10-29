@@ -77,7 +77,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv\|dist'
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='solarized'
+let g:airline_theme='nord'
 
 "" syntastic begginer config
 set statusline+=%#warningmsg#
