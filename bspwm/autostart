@@ -1,6 +1,6 @@
 xbanish &
 
-xfsettingsd &
+xsettingsd &
 nm-applet &
 pa-applet &
 pamac-tray &
