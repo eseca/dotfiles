@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Try to detect profile
+autorandr --change
